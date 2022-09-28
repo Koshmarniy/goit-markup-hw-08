@@ -1,0 +1,27 @@
+// overlay
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translateY(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: var(--blue-bg-rgba);
+
+    &__description {
+        color: var(--light-txt-cl);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: calc(28px / 18px);
+        letter-spacing: 0.03em;
+    }
+}
+

@@ -1,0 +1,26 @@
+.socials-list {
+    display: flex;
+    gap: 12px;
+    justify-content:center;
+    
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: var(--lightgrey-bg-cl);
+        width: 44px;
+        height: 44px;
+        
+        background-color: var(--light-txt-cl);
+        border-radius: 50%;
+        transition-property: background-color, fill;
+        transition-duration: var(--anim-fast);
+        transition-timing-function: var(--cubic-bezier);
+    }
+    &__link:hover,
+    &__link:focus {
+        fill: var(--next-bg-cl);
+        background-color: var(--blue-bg-cl);
+    
+    } 
+}

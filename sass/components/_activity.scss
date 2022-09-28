@@ -1,0 +1,57 @@
+// activity
+
+.activity {
+    padding-bottom: 94px;
+    &__container {
+        position: relative;
+    }
+
+    &-list {
+        display: flex;
+        gap: 30px;
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 50px;
+    
+        font-weight: 700;
+        font-size: 36px;
+        line-height: calc(42 / 36);
+        letter-spacing: 0.03em;
+        color: var(--main-txt-cl);
+    
+    }
+    &-list__iteam {
+        list-style: none;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    
+    }
+    &__desc {
+
+        position: absolute;
+        bottom: 0%;
+    
+        display: flex;
+        justify-content: center;
+        
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+        text-align: center;
+        align-items: center;
+    
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        
+        width: 370px;
+        height: 70px;
+    
+        background: rgba(47, 48, 58, 0.8);
+    
+        color: var(--light-txt-cl);
+    
+    }
+}

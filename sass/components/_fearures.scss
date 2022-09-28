@@ -1,0 +1,46 @@
+// features
+
+.features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--main-txt-cl);
+        margin-bottom: 10px;
+    }
+    &-list {
+        display: flex;
+        gap: 30px;
+    }
+    &-list__iteam {
+        width: 270px;
+        list-style: none; 
+        margin-bottom: 0px;
+        
+    }
+    &__description {
+        font-size: 14px;
+        line-height: calc(24 / 14);
+        letter-spacing: 0.03em;
+        color: var(--grey-txt-cl);
+    }
+}
+.box-icon-antenna,
+.box-icon-clock,
+.box-icon-diagram,
+.box-icon-astronaut {
+    display: block;
+    padding: 25px 100px;
+    width: 270px;
+    height: 120px;
+    padding: auto;
+    background: var(--grey-bg-cl);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+

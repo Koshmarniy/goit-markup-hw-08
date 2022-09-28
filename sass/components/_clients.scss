@@ -1,0 +1,50 @@
+// clients
+
+.clients {
+    background: var(--light-txt-cl);
+
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__caption {
+        font-size: 36px;
+        line-height: calc(42px / 36px);
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--main-txt-cl);
+    
+        margin-bottom: 30px;
+    }
+    &-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    &-list__item {
+        width: 170px;
+        height: 92px;
+    }
+    &-list__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        fill: var(--lightgrey-bg-cl);
+        width: 100%;
+        height: 100%;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        transition-property: border, fill;
+        transition-duration: var(--anim-fast);
+        transition-timing-function: var(--cubic-bezier);
+    }
+
+    &-list__link:hover,
+    &-list__link:focus {
+        fill: var(--blue-bg-cl);
+        border: 1px solid var(--blue-bg-cl);
+    }
+}
