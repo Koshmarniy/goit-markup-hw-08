@@ -1,29 +1,49 @@
 // main
 
 .main {
+
     background: var(--main-bg-cl);
-    padding: 200px 0px;
+    padding: 118px 60px;
     text-align: center;
+
     background-image: 
     linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url("../images/bacground/main-bg-sq.jpg");
     background-repeat: no-repeat;
+
     max-width: 1600px;
     min-height: 600px;
     margin-left: auto;
     margin-right: auto;
 
+    @media screen and (min-width: 768px) {
+        padding: 118px 204px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 200px 0px;
+    }
+
     &__main-title {
         margin-top: 0;
-        margin-bottom: 0;
         margin-bottom: 30px;
     
         font-weight: 900;
-        font-size: 44px;
-        line-height: calc(60 / 44);
+        font-size: 23px;
+        line-height: calc(42 / 23);
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--light-txt-cl);
+
+        @media screen and (min-width: 768px) {
+        font-size: 23px;
+        line-height: calc(42 / 23);
+        }
+    
+        @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: calc(60 / 44);
+        }
     }
     
 }
