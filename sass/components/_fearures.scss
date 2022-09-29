@@ -1,10 +1,23 @@
 // features
 
 .features {
-    padding-top: 94px;
-    padding-bottom: 94px;
+
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+    @media screen and (min-width: 768px) {
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+     
+    }
 
     &__title {
+
+        text-align: center;
         font-weight: 700;
         font-size: 14px;
         line-height: calc(16 / 14);
@@ -12,15 +25,44 @@
         text-transform: uppercase;
         color: var(--main-txt-cl);
         margin-bottom: 10px;
+
+        @media screen and (min-width: 768px) {
+            text-align:left;
+        }
+
+        @media screen and (min-width: 768px) {
+            text-align:left;
+        }
     }
     &-list {
+
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         gap: 30px;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
+        @media screen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+        }
+
     }
     &-list__iteam {
-        width: 270px;
+
         list-style: none; 
         margin-bottom: 0px;
+
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 30px)/2);
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 90px)/4);
+        }
+
+
         
     }
     &__description {
@@ -34,13 +76,26 @@
 .box-icon-clock,
 .box-icon-diagram,
 .box-icon-astronaut {
+
     display: block;
-    padding: 25px 100px;
-    width: 270px;
+    padding: 25px 190px;
+    width: 450px;
     height: 120px;
-    padding: auto;
     background: var(--grey-bg-cl);
     border-radius: 4px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        padding: 25px 142px;
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        padding: 25px 100px;
+        width: 270px;
+
+
+    }
 }
 

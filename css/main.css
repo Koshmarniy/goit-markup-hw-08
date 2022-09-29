@@ -57,9 +57,9 @@ img {
 }
 
 .container {
-  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   outline: 2px solid red;
@@ -247,10 +247,17 @@ img {
 }
 
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .features__title {
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -259,16 +266,57 @@ img {
   color: var(--main-txt-cl);
   margin-bottom: 10px;
 }
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: left;
+  }
+}
 .features-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .features-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 .features-list__iteam {
-  width: 270px;
   list-style: none;
   margin-bottom: 0px;
+}
+@media screen and (min-width: 768px) {
+  .features-list__iteam {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-list__iteam {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
 }
 .features__description {
   font-size: 14px;
@@ -282,13 +330,30 @@ img {
 .box-icon-diagram,
 .box-icon-astronaut {
   display: block;
-  padding: 25px 100px;
-  width: 270px;
+  padding: 25px 190px;
+  width: 450px;
   height: 120px;
-  padding: auto;
   background: var(--grey-bg-cl);
   border-radius: 4px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .box-icon-antenna,
+.box-icon-clock,
+.box-icon-diagram,
+.box-icon-astronaut {
+    width: 354px;
+    padding: 25px 142px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .box-icon-antenna,
+.box-icon-clock,
+.box-icon-diagram,
+.box-icon-astronaut {
+    padding: 25px 100px;
+    width: 270px;
+  }
 }
 
 .activity {
@@ -345,31 +410,85 @@ img {
 
 .team {
   background: #F5F4FA;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   min-height: 708px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 760px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .team-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+.team-list-list-item {
+  background-color: var(--next-bg-cl);
+  list-style: none;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .team-list-list-item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 .team-title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
+}
+@media screen and (min-width: 1200px) {
+  .team-title {
+    font-size: 36px;
+    line-height: 1.1666666667;
+    margin-bottom: 50px;
+  }
 }
 .team-list-item {
   background-color: var(--next-bg-cl);
   list-style: none;
-  width: 270px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -488,34 +607,20 @@ img {
           align-items: center;
   gap: 30px;
 }
-@media screen and (min-width: 1200px) {
-  .clients-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 30px;
-  }
-}
 .clients-list__item {
-  width: 210px;
-  height: 92px;
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 768px) {
   .clients-list__item {
-    width: 226px;
-    height: 92px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
   .clients-list__item {
-    width: 170px;
-    height: 92px;
+    -ms-flex-preferred-size: calc((100% - 150px) / 6);
+        flex-basis: calc((100% - 150px) / 6);
   }
 }
 .clients-list__link {
@@ -634,10 +739,10 @@ img {
   font-size: 26px;
   line-height: 1.1923076923;
 }
-.logo-title--footer__accent-1 {
+.logo-title--footer__accent-blue {
   color: #2196F3;
 }
-.logo-title--footer__accent-2 {
+.logo-title--footer__accent-white {
   color: #ffffff;
 }
 

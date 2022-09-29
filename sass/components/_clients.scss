@@ -49,34 +49,17 @@
         align-items: center;
         gap: 30px;
 
-        @media screen and (min-width: 768px) {
-
-        }
-    
-        
-        @media screen and (min-width: 1200px) {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
-        }
     }
     &-list__item {
-        width: 210px;
-        height: 92px;
-
+        flex-basis: calc((100% - 30px)/2);
 
         @media screen and (min-width: 768px) {
-            width: 226px;
-            height: 92px;
+            flex-basis: calc((100% - 60px)/3);
         }
     
         @media screen and (min-width: 1200px) {
-            width: 170px;
-            height: 92px;
+            flex-basis: calc((100% - 150px)/6);
         }
-
-
     }
     &-list__link {
         display: flex;

@@ -501,11 +501,11 @@ img {
     font-size: 26px;
     line-height: calc(31 / 26);
 }
-.logo-title--footer__accent-1{
+.logo-title--footer__accent-blue{
     color: #2196F3;;
 }
 
-.logo-title--footer__accent-2 {
+.logo-title--footer__accent-white {
     color: #ffffff;
 }
 .address {
