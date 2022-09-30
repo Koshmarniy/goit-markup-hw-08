@@ -1,6 +1,11 @@
 // navigation
 .nav {
     margin-right: auto;
+
+    @media screen and (min-width: 0px) and (max-width: 767px){
+        display: none;
+    }
+
     &__list {
         display: flex;
         gap: 50px;

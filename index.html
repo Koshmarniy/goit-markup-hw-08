@@ -27,7 +27,7 @@
   <body class="page">
     <header class="header">
       <!--Основна навігація-->
-      <!-- <div class="container container--header">
+      <div class="container container--header">
         <a class="logo-title" href="index.html" rel="noopener noreferrer"
           ><span class="logo-title__accent">Web</span>Studio</a
         >
@@ -83,7 +83,17 @@
             >
           </li>
         </ul>
-      </div> -->
+        <button
+          type="button"
+          class="menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#menu-open"></use>
+          </svg>
+        </button>
+      </div>
     </header>
 
     <main>
@@ -203,7 +213,7 @@
       </section> -->
 
       <!--Наша команда-->
-      <section class="team">
+      <!-- <section class="team">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
@@ -481,7 +491,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--Постійні клієнти-->
       <!-- <section class="clients">
@@ -784,6 +794,110 @@
         </form>
       </div>
     </div>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-btn js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#menu-close"></use>
+        </svg>
+      </button>
+
+      <ul class="menu-nav__list">
+        <li class="menu-nav__item">
+          <a
+            class="menu-nav__link active"
+            href="./index.html"
+            rel="noopener noreferrer"
+            >Студія</a
+          >
+        </li>
+        <li class="menu-nav__item">
+          <a
+            class="nav-menu__link"
+            href="./portfolio.html"
+            rel="noopener noreferrer"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="nmenu-nav__item">
+          <a 
+          class="menu-nav__link" 
+          href="" 
+          rel="noopener noreferrer"
+            >Контакти</a
+          >
+        </li>
+      </ul>
+
+      <ul class="menu-contacts-list">
+        <li class="menu-contacts-list__item">
+          <a
+            class="menu-contacts-list__link-info"
+            href="mailto:info@devstudio.com"
+            rel="noopener noreferrer"
+          >
+            info@devstudio.com</a
+          >
+        </li>
+        <li class="menu-contacts-list__item">
+          <a
+            class="menu-contacts-list__link-info"
+            href="tel:+380961111111"
+            rel="noopener noreferrer"
+          >
+            +38 096 111 11 11</a
+          >
+        </li>
+      </ul>
+
+      <ul class="menu-social-list">
+        <li class="menu-social-list__item">
+          <a class="menu-contacts-list__link-info" 
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Instagram
+        </a>
+        </li>
+        <li class="menu-social-list__item">
+          <a class="menu-contacts-list__link-info" 
+          href="https://twitter.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Twitter
+        </a>
+        </li>
+        <li class="menu-social-list__item">
+          <a class="menu-contacts-list__link-info" 
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Facebook
+        </a>
+        </li>
+        <li class="menu-social-list__item">
+          <a class="menu-contacts-list__link-info" 
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Linkedin
+        </a>
+        </li>
+      </ul>
+
+      
+
+    </div>
+  </div>
+
     <script src="./js/modal.js"></script>
+    <!-- mobile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
