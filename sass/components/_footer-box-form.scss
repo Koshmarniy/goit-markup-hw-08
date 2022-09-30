@@ -1,6 +1,11 @@
 // box-form
 .box-form {
-    margin-left: auto;
+    
+
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+
+    }
 
     &__title { 
         font-size: 14px;

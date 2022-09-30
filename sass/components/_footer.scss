@@ -9,9 +9,17 @@
     margin-right: auto;
 
     & .container {
-        display: flex;
-        align-items: baseline;
+        display: block;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: baseline;
+        }
         
+    }
+
+    .address-box {
+
     }
 
     & .link {
@@ -22,7 +30,15 @@
         text-decoration: none;
     }
     &-social-link {
-        margin-left: 93px;
+        text-align: center;
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 60px;
+        }
+
+        @media screen and (min-width:1200px) {
+            margin-left: 93px;
+        }
     }
     &-social-link__title {
         font-size: 14px;

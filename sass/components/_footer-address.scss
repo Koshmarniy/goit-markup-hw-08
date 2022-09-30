@@ -1,6 +1,12 @@
 // address
 .address {
     font-style: normal;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
     &__title {
         margin-bottom: 9px;
         font-family: var(--main-font) ;
