@@ -1,19 +1,16 @@
 .contacts-list {
-    
-    display: flex;
-    gap: 50px;
+
 
     @media screen and (min-width: 0px) and (max-width: 767px){
         display: none;
     }
-
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        gap: 50px;
+    }
     &__link-info {
         padding-top: 32px;
         padding-bottom: 32px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
         color: var(--grey-txt-cl);
         font-weight: 500;
         font-size: 14px;
@@ -23,6 +20,13 @@
         transition-property: color;
         transition-duration: var(--anim-fast);
         transition-timing-function: var(--cubic-bezier);
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
     }
     &__icon {
         fill: currentColor;
