@@ -1450,6 +1450,11 @@ img {
   gap: 10px;
   margin-top: 64px;
 }
+@media screen and (max-width: 479px) {
+  .menu-social-list {
+    display: block;
+  }
+}
 .menu-social-list__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
@@ -1460,4 +1465,7 @@ img {
   letter-spacing: 0.02em;
   color: #2196F3;
   padding-right: 10px;
+}
+.menu-social-list__link-info:hover, .menu-social-list__link-infofocus {
+  fill: #2196F3;
 }/*# sourceMappingURL=main.css.map */
