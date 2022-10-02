@@ -11,6 +11,14 @@
     & .container {
         display: block;
 
+        @media screen and (min-width:768px) and (max-width: 1199px) {
+            display: flex;
+            align-items: baseline;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
         @media screen and (min-width: 768px) {
             display: flex;
             align-items: baseline;
@@ -18,9 +26,6 @@
         
     }
 
-    .address-box {
-
-    }
 
     & .link {
         font-size: 14px;
@@ -73,8 +78,12 @@
         background-color: var(--blue-bg-cl);
     }
     &-form {
-        display: flex;
+        display: block;
         margin-top: 20px;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
     }
 }
 

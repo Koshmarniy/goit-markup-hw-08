@@ -22,4 +22,9 @@
     &__icon {
         margin-left: 10px;
     }
+
+    @media screen and (max-width: 767px) {
+       margin-right: auto;
+       margin-left: auto;
+    }
 }

@@ -13,6 +13,11 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #FFFFFF;
+
+        @media screen and (max-width: 1199px) {
+            display: block;
+            text-align: center;
+        }
     }
     &__input {
         display: block;
@@ -29,6 +34,10 @@
         border-radius: 4px;
         background-color: var(--main-bg-cl);
         transition: var(--anim-fast);
+        @media screen and (max-width: 1199px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
         }
     &__input:hover,
     &__input:focus {
