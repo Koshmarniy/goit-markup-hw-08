@@ -21,6 +21,7 @@
         transition-duration: var(--anim-fast);
         transition-timing-function: var(--cubic-bezier);
 
+
         @media screen and (min-width: 1200px) {
             display: flex;
             align-items: center;
