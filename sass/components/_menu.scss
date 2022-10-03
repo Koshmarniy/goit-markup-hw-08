@@ -61,6 +61,11 @@
 }
 
 .menu-list {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: auto;
 
     &__item:not(:last-child) {
         margin-bottom: 32px;
@@ -81,15 +86,13 @@
     }
     &__link.active {
         color: var(--accent-txt-cl);
-        // position: relative;
     }
 }
 
 
 
 .menu-contacts-list {
-    margin-top: 300px;
-
+  
 
     &__item:not(:last-child) {
         margin-bottom: 10px;
@@ -120,10 +123,10 @@
 .menu-social-list {
     display: flex;
     gap: 10px;
-    margin-top: 64px;
+ 
     
     @media screen and (max-width: 479px) {
-        display: block;
+        flex-wrap: wrap;
     }
 
     &__item:not(:last-child) {

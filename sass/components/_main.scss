@@ -5,16 +5,49 @@
     background: var(--main-bg-cl);
     padding: 118px 60px;
     text-align: center;
-
-    background-image: 
-    linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url("../images/bacground/main-bg-sq.jpg");
-    background-repeat: no-repeat;
-
+    
     max-width: 1600px;
     min-height: 600px;
     margin-left: auto;
     margin-right: auto;
+
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: 
+    linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/bacground/bg/_mob-@1x.jpg");
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url("../images/bacground/bg/_mob-@2x.jpg");
+      }
+
+    @media screen and (min-width: 481px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/bacground/bg/_tab-@1x.jpg");
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/bacground/bg/_tab-@2x.jpg");
+        }
+    }
+
+    @media screen and (min-width: 769px) {
+        @include section(200px, 200px);
+      
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url("../images/bacground/bg/_desk-@1x.jpg");
+      
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url("../images/bacground/bg/_desk-@1x.jpg");
+        }
+      }
+
+      
+
 
     @media screen and (min-width: 768px) {
         padding: 118px 204px;
