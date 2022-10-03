@@ -67,9 +67,6 @@
     gap: 32px;
     margin-bottom: auto;
 
-    &__item:not(:last-child) {
-        margin-bottom: 32px;
-    }
 
     &__link {
         font-weight: 500;
@@ -93,6 +90,7 @@
 
 .menu-contacts-list {
   
+    
 
     &__item:not(:last-child) {
         margin-bottom: 10px;
@@ -123,7 +121,7 @@
 .menu-social-list {
     display: flex;
     gap: 10px;
- 
+    margin-top: 64px;
     
     @media screen and (max-width: 479px) {
         flex-wrap: wrap;
