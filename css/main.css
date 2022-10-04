@@ -873,7 +873,6 @@ img {
 @media screen and (max-width: 767px) {
   .address {
     text-align: center;
-    margin-bottom: 60px;
   }
 }
 .address__title {
@@ -887,6 +886,12 @@ img {
 }
 .address-list__iteam:not(:last-child) {
   margin-bottom: 9px;
+}
+
+@media screen and (max-width: 767px) {
+  .address-box {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {

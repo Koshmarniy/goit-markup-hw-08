@@ -1,6 +1,14 @@
 // box-form
+
+.address-box {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+}
+
 .box-form {
     
+
     @media screen and (min-width: 768px) and (max-width:1199px) {
         width: 100%;
         margin-top: 60px;
