@@ -219,7 +219,7 @@ img {
 
 .main {
   background: var(--main-bg-cl);
-  padding: 118px 60px;
+  padding-top: 118px;
   text-align: center;
   max-width: 1600px;
   min-height: 400px;
@@ -234,6 +234,7 @@ img {
 @media screen and (min-width: 1200px) {
   .main {
     min-height: 600px;
+    padding: 118px 60px;
   }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -266,11 +267,6 @@ img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/bacground/bg/_desk-@2x.jpg");
   }
 }
-@media screen and (min-width: 768px) {
-  .main {
-    padding: 118px 204px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .main {
     padding: 200px 0px;
@@ -280,17 +276,11 @@ img {
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 23px;
+  font-size: 26px;
   line-height: 1.8260869565;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--light-txt-cl);
-}
-@media screen and (min-width: 768px) {
-  .main__main-title {
-    font-size: 23px;
-    line-height: 1.8260869565;
-  }
 }
 @media screen and (min-width: 1200px) {
   .main__main-title {
